@@ -66,7 +66,9 @@ class ViewController: UIViewController {
             "deliverable": "true"
         ]
         
-        guard let url = URL(string: "https://aqueous-waters-34203.herokuapp.com/posts") else { return }
+        print(parameters)
+        
+        guard let url = URL(string: "https://aqueous-waters-34203.herokuapp.com/messages") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
