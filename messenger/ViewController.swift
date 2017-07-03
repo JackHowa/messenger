@@ -24,5 +24,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func sendMessage(_ sender: Any) {
+        let messageText = messageField.text
+        print(messageText!)
+    }
 }
 
