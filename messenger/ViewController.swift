@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -28,22 +29,34 @@ class ViewController: UIViewController {
     @IBAction func sendMessage(_ sender: Any) {
         let messageText = messageField.text
         print(messageText!)
-        getString()
+        print(getString())
     }
     
-    
-    func getString() {
-        
-        let todoEndpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
-        Alamofire.request(todoEndpoint)
+    // alamofire get string
+    func getString()  {
+        let url: String = "https://aqueous-waters-34203.herokuapp.com/messages/1"
+        Alamofire.request(url)
             .responseJSON { response in
-                guard let json = response.result.value as? [String: Any] else {
-                    print("Didn't get todo object as JSON from API")
-                    return
+                switch response.result {
+                case .success(let value):
+                    let json = JSON(value)
+                    let caption = json["caption"].stringValue as? String
+                    self.assignOutput(caption: caption!)
+                case .failure(let error):
+                    print(error)
                 }
-                print(json)
+//                return caption!
         }
+        
     }
+    
+    func assignOutput(caption: String) {
+        messageField.text = caption
+    }
+    
+    // parson json 
+    
+    
     
 }
 
