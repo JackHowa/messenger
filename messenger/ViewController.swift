@@ -58,11 +58,11 @@ class ViewController: UIViewController {
         print(caption!)
         
         let parameters: Parameters = [
-            "caption": caption,
-            "image_url": image_url,
-            "sender_id": sender_id,
-            "receiver_id": receiver_id,
-            "deliver_at": deliver_at,
+            "caption": caption!,
+            "image_url": image_url!,
+            "sender_id": sender_id!,
+            "receiver_id": receiver_id!,
+            "deliver_at": deliver_at!,
             "deliverable": "true"
         ]
         
