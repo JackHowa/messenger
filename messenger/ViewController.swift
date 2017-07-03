@@ -33,16 +33,17 @@ class ViewController: UIViewController {
     }
     
     // alamofire get string
-    func getString() -> String  {
+    func getString()  {
         
-        let todoEndpoint: String = "https://jsonplaceholder.typicode.com/todos/1"
+        let todoEndpoint: String = "https://aqueous-waters-34203.herokuapp.com/messages/1"
         Alamofire.request(todoEndpoint)
             .responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-//                    print("JSON: \(json["title"])")
-                    let title = json["title"].string
+                    print("JSON: \(json["caption"])")
+                    let caption = json["caption"].stringValue as? String
+                    print(caption!)
                 case .failure(let error):
                     print(error)
                 }
