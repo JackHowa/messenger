@@ -55,35 +55,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-5x-KHn" userLabel="Caption Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testing with hardcoded caption" borderStyle="roundedRect" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-5x-KHn" userLabel="Caption Field">
                                 <rect key="frame" x="87" y="309" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Image URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="392-L8-tWN" userLabel="Image URL Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://pics.me.me/yeah-you-guessed-it-its-a-sea-lion-9949420.png" borderStyle="roundedRect" placeholder="Image URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="392-L8-tWN" userLabel="Image URL Field">
                                 <rect key="frame" x="87" y="347" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sender ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36B-Xf-gUe" userLabel="Sender ID Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Sender ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36B-Xf-gUe" userLabel="Sender ID Field">
                                 <rect key="frame" x="87" y="385" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Deliver At " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71b-gQ-rC2" userLabel="Deliver At field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2017-07-04T17:12:02-05:00" borderStyle="roundedRect" placeholder="Deliver At " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71b-gQ-rC2" userLabel="Deliver At field">
                                 <rect key="frame" x="87" y="423" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Receiver ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-dg-Os3" userLabel="Receiver ID Field">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="Receiver ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-dg-Os3" userLabel="Receiver ID Field">
                                 <rect key="frame" x="87" y="461" width="200" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="textColor"/>
@@ -151,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1141.5999999999999" y="-248.72563718140933"/>
+            <point key="canvasLocation" x="-639" y="-245"/>
         </scene>
     </scenes>
 </document>
