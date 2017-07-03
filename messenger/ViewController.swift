@@ -12,10 +12,6 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var messageField: UITextField!
-    
-    @IBOutlet weak var sendButton: UIButton!
-    
     @IBOutlet weak var inboxField: UITextField!
     
     override func viewDidLoad() {
