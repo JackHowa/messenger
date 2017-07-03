@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageURLField: UITextField!
     @IBOutlet weak var senderIDField: UITextField!
     @IBOutlet weak var deliverAtField: UITextField!
+    @IBOutlet weak var receiverIDField: UITextField!
     
     
     override func viewDidLoad() {
@@ -51,10 +52,10 @@ class ViewController: UIViewController {
     @IBAction func tappedSendMessage(_ sender: Any) {
         let caption = captionField.text
         let image_url = imageURLField.text
-        // receiver_id
+        let receiver_id = receiverIDField.text
         let sender_id = senderIDField.text
         let deliver_at = deliverAtField.text
-        
+        print(caption!)
     }
     
     
