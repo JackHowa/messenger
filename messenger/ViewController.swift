@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sendButton: UIButton!
     
+    @IBOutlet weak var inboxField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,11 +31,14 @@ class ViewController: UIViewController {
     @IBAction func sendMessage(_ sender: Any) {
         let messageText = messageField.text
         print(messageText!)
-        print(getString())
+//        print(getString())
     }
     
     // alamofire get string
     func getString()  {
+        
+    }
+    @IBAction func tappedGetMail(_ sender: Any) {
         let url: String = "https://aqueous-waters-34203.herokuapp.com/messages/1"
         Alamofire.request(url)
             .responseJSON { response in
@@ -45,13 +50,11 @@ class ViewController: UIViewController {
                 case .failure(let error):
                     print(error)
                 }
-//                return caption!
         }
-        
     }
     
     func assignOutput(caption: String) {
-        messageField.text = caption
+        inboxField.text = caption
     }
     
     // parson json 
