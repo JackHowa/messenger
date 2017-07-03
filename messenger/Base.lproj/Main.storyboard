@@ -44,6 +44,10 @@
                             <constraint firstItem="Hc3-14-1aL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uGo-iA-CRL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageField" destination="Hc3-14-1aL" id="eZ1-C0-gah"/>
+                        <outlet property="sendButton" destination="NEe-pD-npy" id="v2K-GA-LTA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
