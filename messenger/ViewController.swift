@@ -34,21 +34,24 @@ class ViewController: UIViewController {
     
     // alamofire get string
     func getString()  {
-        
-        let todoEndpoint: String = "https://aqueous-waters-34203.herokuapp.com/messages/1"
-        Alamofire.request(todoEndpoint)
+        let url: String = "https://aqueous-waters-34203.herokuapp.com/messages/1"
+        Alamofire.request(url)
             .responseJSON { response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-                    print("JSON: \(json["caption"])")
                     let caption = json["caption"].stringValue as? String
-                    print(caption!)
+                    self.assignOutput(caption: caption!)
                 case .failure(let error):
                     print(error)
                 }
+//                return caption!
         }
-//        return title
+        
+    }
+    
+    func assignOutput(caption: String) {
+        messageField.text = caption
     }
     
     // parson json 
