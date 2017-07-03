@@ -11,8 +11,13 @@ import Alamofire
 import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    
+    
+    // get
     @IBOutlet weak var inboxField: UITextField!
+    
+    // post 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
