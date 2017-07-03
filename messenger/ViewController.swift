@@ -12,11 +12,14 @@ import SwiftyJSON
 
 class ViewController: UIViewController {
     
-    
     // get
     @IBOutlet weak var inboxField: UITextField!
     
     // post 
+    @IBOutlet weak var captionField: UITextField!
+    @IBOutlet weak var imageURLField: UITextField!
+    @IBOutlet weak var senderIDField: UITextField!
+    @IBOutlet weak var deliverAtField: UITextField!
     
     
     override func viewDidLoad() {
@@ -38,9 +41,23 @@ class ViewController: UIViewController {
         }
     }
     
+    // helper function for tapped get mail
     func assignOutput(caption: String) {
         inboxField.text = caption
     }
+    
+    
+    // post new messages
+    @IBAction func tappedSendMessage(_ sender: Any) {
+        let caption = captionField.text
+        let image_url = imageURLField.text
+        // receiver_id
+        let sender_id = senderIDField.text
+        let deliver_at = deliverAtField.text
+        
+    }
+    
+    
     
     
     

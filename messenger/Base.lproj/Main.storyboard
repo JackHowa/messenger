@@ -80,6 +80,9 @@
                                 <rect key="frame" x="241" y="461" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.60049725890000005" blue="0.6120505933" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tappedSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oxN-FD-2kw"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUz-5x-KHn" userLabel="Caption Field">
                                 <rect key="frame" x="87" y="309" width="200" height="30"/>
@@ -126,7 +129,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="captionField" destination="XUz-5x-KHn" id="V6V-8I-RWr"/>
+                        <outlet property="deliverAtField" destination="71b-gQ-rC2" id="V6U-cI-6Gr"/>
+                        <outlet property="imageURLField" destination="392-L8-tWN" id="PWa-yW-U9h"/>
                         <outlet property="inboxField" destination="USU-ZM-91J" id="80i-Jj-Fbr"/>
+                        <outlet property="senderIDField" destination="36B-Xf-gUe" id="A1h-rU-NoG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
